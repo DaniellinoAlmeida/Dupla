@@ -5,21 +5,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
   <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
   <script src="components/loader.js"></script>
-  <script src="lib/onsenui/js/onsenui.min.js"></script>
+  <script src="components/jquery-3.4.1.min.js"></script>
+  <script src="components/acao.js"></script>
 
   <link rel="stylesheet" href="components/loader.css">
-  <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
-  <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
   <link rel="stylesheet" href="css/style.css">
-
-  <style>
-    body{
-      background-color: pink;
-    }
-  </style>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 
 </head>
 <body>
-  <h1>aaaaaaaaaaa</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h3 style="color:white">Cálculo de metabolismo Basal</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <label class="form-group">Taxa de atividade:</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-8">
+      <label><pre class="form-control">1- Sedentário </pre></label>
+    </div>
+  </div>
+   <div class="row">
+    <div class="col-xs-8">
+      <label><pre class="form-control">2- Levemente ativo</pre></label>
+    </div>
+  </div>
+   <div class="row">
+    <div class="col-xs-8">
+      <label><pre class="form-control">3- Moderadamente ativo</pre></label>
+    </div>
+  </div>
+   <div class="row">
+    <div class="col-xs-8">
+      <label><pre class="form-control">4- Altamente ativo</pre></label>
+    </div>
+  </div>
+   <div class="row">
+    <div class="col-xs-8">
+      <label><pre class="form-control">5- Extremamente ativo</pre></label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <input class="form-control" placeholder="Digite um dos numeros acima" id="taxa">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <label class="form-group">Sexo:</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6">
+      <label><pre class="form-control">Masculino</pre></label>
+    </div>
+    <div class="col-xs-6">
+      <label><pre class="form-control">Feminino</pre></label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <input class="form-control" type="text" placeholder="Digite seu sexo em M ou F" id="sexo">
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-xs-12">
+      <button class="btn btn-success btn-block" id="enviar" onclick="enviar()" type="submit">Enviar</button>
+      <br>
+    </div>
+  </div>
+</div>
 </body>
 </html>
