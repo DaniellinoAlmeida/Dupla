@@ -8,12 +8,3 @@ label{
 #a{
   margin-bottom: 40%;
 }
-#a:link{
-  text-decoration: none;
-}
-input{
-  margin-right: 100px;
-}
-#sedentario:hover{
-  background-color: black;
-}
